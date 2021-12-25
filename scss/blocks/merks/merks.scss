@@ -1,0 +1,108 @@
+.merks {
+  padding: 120px 120px 60px 120px;
+  display: grid;
+  grid-template-columns: 650px 1fr;
+  column-gap: 80px;
+  grid-template-areas:
+    "merks-img quote"
+    "merks-img caption";
+  position: relative;
+
+  &__img {
+    grid-area: merks-img;
+    display: block;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  &__quote {
+    grid-area: quote;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 1.29;
+    letter-spacing: -0.5px;
+  }
+
+  &__caption {
+    grid-area: caption;
+    align-self: end;
+  }
+
+  &__autor {
+    margin: 0 0 6px;
+    padding: 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #222222;
+    opacity: 0.7;
+  }
+
+  @media screen and (max-width: 1240px) {
+    & {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 40px;
+    }
+  }
+
+  @media screen and (max-width: 980px) {
+    & {
+      padding-left: 50px;
+    }
+
+    @media screen and (max-width: 740px) {
+      & {
+        padding: 40px 0;
+        grid-template-columns: 1fr;
+        column-gap: unset;
+        row-gap: 40px;
+        grid-template-areas:
+          "merks-img"
+          "quote"
+          "caption";
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 40px;
+        width: 100%;
+        border-top: 1px solid #e3e3e3;
+      }
+
+      &__img {
+        margin-top: 20px;
+      }
+
+      &__autor {
+        font-size: 14px;
+        line-height: 1.57;
+        margin-bottom: 4px;
+      }
+
+      &__title {
+        font-size: 10px;
+        line-height: 1.6;
+      }
+
+      &__quote {
+        font-size: 23px;
+        line-height: 1.26;
+      }
+    }
+  }
+}
