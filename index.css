@@ -1034,22 +1034,34 @@
     display: block;
   }
   .bikes__card {
-    display: none;
-  }
-  .bikes__card:first-of-type {
     display: block;
     max-width: 100%;
+    width: 100%;
     padding: 14.95px;
     box-shadow: 0px 20px 140px rgba(0, 0, 0, 0.06);
     border-radius: 20px;
   }
-  .bikes__cards {
+  .bikes__slider-window {
     margin-top: 20px;
-    grid-template-columns: 1fr;
+    overflow-x: hidden;
+    border-radius: 20px;
+    box-shadow: 0px 20px 140px rgba(0, 0, 0, 0.06);
+  }
+  .bikes__cards {
+    margin: 0;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    grid-template-columns: repeat(3, 100%);
+    border-radius: 20px;
+    transition: 0.4s all ease-in-out;
   }
   .bikes__img-placeholder {
     padding: 0;
     box-shadow: none;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
   }
   .bikes__name {
     margin: 2.95px auto 0;

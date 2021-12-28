@@ -122,9 +122,6 @@ function showPrevSection() {
 
 const bikesNav = page.querySelector('.bikes__nav');
 const bikesLinks = bikesNav.querySelectorAll('.bikes__radio');
-const bikesSlider = page.querySelector('.bikes__slider');
-const sliderBtns = bikesSlider.querySelectorAll('.bikes__radio');
-// const bikesMobileMenu = page.querySelector('.bikes__mobile-menu');
 
 const bikesContent = [
   {
@@ -219,18 +216,52 @@ function renderBikes(evt) {
     bikesImgs[i].alt = category.cards[i].title;
     bikesNames[i].textContent = category.cards[i].title;
   }
-  // bikesMobileMenu.classList.toggle('bikes__mobile-menu_opened')
 
 }
+
+// bikes mobile slider
+
+const bikesSlider = page.querySelector('.bikes__slider');
+const sliderBtns = bikesSlider.querySelectorAll('.bikes__radio');
+const bikesCards = document.querySelector('.bikes__cards');
+const allCards = document.querySelectorAll('.bikes__card');
+const stepSize = allCards[0].clientWidth;
+let index = 0;
 
 sliderBtns.forEach(btn => btn.addEventListener('click', changePicture));
 
 function changePicture(evt) {
-  let index = evt.target.value - 1;
-  for (let i = 0; i < bikesImgs.length; i++) {
-    if (index === bikesImgs.length) index = 0;
-    bikesImgs[i].src = category.cards[index].src;
-    index++;
-  }
+  index = evt.target.value - 1;
+  bikesCards.style.transform = 'translateX(' + `${-stepSize * index}px)`;
 }
 
+// swipe detection and handler
+
+const sliderWindow = document.querySelector('.bikes__slider-window');
+let touchstartX = 0;
+let touchendX = 0;
+
+sliderWindow.addEventListener('touchstart', function (event) {
+  touchstartX = event.changedTouches[0].screenX;
+}, false);
+
+sliderWindow.addEventListener('touchend', function (event) {
+  touchendX = event.changedTouches[0].screenX;
+  handleGesture();
+}, false);
+
+function handleGesture() {
+  const intViewportWidth = window.innerWidth;
+  if (intViewportWidth <= 740) {
+    if (touchendX < touchstartX) {
+      if (index === allCards.length - 1) index = -1;
+      index++;
+      bikesCards.style.transform = 'translateX(' + `${-stepSize * index}px)`;
+    } else {
+      if (index === 0) index = allCards.length;
+      index--;
+      bikesCards.style.transform = 'translateX(' + `${-stepSize * index}px)`;
+    }
+    sliderBtns[index].checked = true;
+  }
+}
