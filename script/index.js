@@ -279,3 +279,15 @@ function handleGesture() {
     sliderBtns[index].checked = true;
   }
 }
+
+// footer form
+
+const form = page.querySelector('.footer__form');
+const formInput = form.querySelector('.footer__input');
+
+form.addEventListener('submit', formSubmitHandler);
+
+function formSubmitHandler(evt) {
+  evt.preventDefault();
+  formInput.value = 'Круто!';
+}
