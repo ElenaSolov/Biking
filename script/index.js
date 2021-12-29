@@ -185,23 +185,31 @@ function bikesRadioBtnsHandler(evt) {
   const intViewportWidth = window.innerWidth;
   if (intViewportWidth <= 740) {
     openBikesMobileMenu(evt);
-  } else renderBikes(evt);
+  } else {
+    renderBikes(evt);
+    updateBikesMobileMenu();
+  }
 }
 
 const bikesLabels = bikesNav.querySelectorAll('.bikes__label');
 function openBikesMobileMenu(evt) {
-
   bikesNav.classList.toggle('bikes__nav_opened');
   bikesLabels.forEach(label => label.classList.remove('bikes__label_hidden'))
   if (!bikesNav.classList.contains('bikes__nav_opened')) {
-    for (let label of bikesLabels) {
-      if (!label.control.checked) {
-        label.classList.add('bikes__label_hidden');
-      }
+    updateBikesMobileMenu();
+  }
+  renderBikes(evt)
+}
+
+function updateBikesMobileMenu() {
+  bikesLabels.forEach(label => label.classList.remove('bikes__label_hidden'));
+  for (let label of bikesLabels) {
+    if (!label.control.checked) {
+      label.classList.add('bikes__label_hidden');
     }
-    renderBikes(evt)
   }
 }
+
 function renderBikes(evt) {
   const val = evt.target.value;
 
@@ -225,12 +233,17 @@ const bikesSlider = page.querySelector('.bikes__slider');
 const sliderBtns = bikesSlider.querySelectorAll('.bikes__radio');
 const bikesCards = document.querySelector('.bikes__cards');
 const allCards = document.querySelectorAll('.bikes__card');
-const stepSize = allCards[0].clientWidth;
+let stepSize = allCards[0].clientWidth;
 let index = 0;
 
 sliderBtns.forEach(btn => btn.addEventListener('click', changePicture));
+window.onresize = function () {
+  bikesCards.style.transform = 'translateX(0px)';
+  sliderBtns[0].checked = true;
+}
 
 function changePicture(evt) {
+  stepSize = allCards[0].clientWidth;
   index = evt.target.value - 1;
   bikesCards.style.transform = 'translateX(' + `${-stepSize * index}px)`;
 }
@@ -253,6 +266,7 @@ sliderWindow.addEventListener('touchend', function (event) {
 function handleGesture() {
   const intViewportWidth = window.innerWidth;
   if (intViewportWidth <= 740) {
+    stepSize = allCards[0].clientWidth;
     if (touchendX < touchstartX) {
       if (index === allCards.length - 1) index = -1;
       index++;
