@@ -51,7 +51,7 @@
     height: 40px;
     left: -1px;
     bottom: 16px;
-    background-image: url(../../../images/highway-sign.svg), url(../../../images/rectangle-green.svg);
+    background-image: url(./images/highway-sign.svg), url(./images/rectangle-green.svg);
     z-index: 2;
     background-repeat: no-repeat;
     background-position: left 16px bottom 12px, center;
@@ -64,7 +64,7 @@
     height: 40px;
     left: -1px;
     bottom: 16px;
-    background-image: url(../../../images/gravel-sign.svg), url(../../../images/rectangle-green.svg);
+    background-image: url(./images/gravel-sign.svg), url(./images/rectangle-green.svg);
     z-index: 2;
     background-repeat: no-repeat;
     background-position: left 16px bottom 12px, center;
@@ -77,7 +77,7 @@
     height: 40px;
     left: -1px;
     bottom: 16px;
-    background-image: url(../../../images/tt-sign.svg), url(../../../images/rectangle-green.svg);
+    background-image: url(./images/tt-sign.svg), url(./images/rectangle-green.svg);
     z-index: 2;
     background-repeat: no-repeat;
     background-position: left 16px bottom 12px, center;
@@ -109,11 +109,11 @@
     }
 
     &_type_prev {
-      background-image: url(../../../images/prev-icon.svg);
+      background-image: url(./images/prev-icon.svg);
     }
 
     &_type_next {
-      background-image: url(../../../images/next-icon.svg);
+      background-image: url(./images/next-icon.svg);
     }
   }
 

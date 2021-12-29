@@ -21,11 +21,11 @@
     }
 
     & .header__img_type_sun {
-      background-image: url(../../../images/brightness-icon-dark.svg);
+      background-image: url(./images/brightness-icon-dark.svg);
     }
 
     & .header__img_type_night {
-      background-image: url(../../../images/night-icon-dark.svg);
+      background-image: url(./images/night-icon-dark.svg);
     }
 
     & .header__slider {
@@ -37,7 +37,7 @@
     }
 
     & .header__burger-menu_opened {
-      background-image: url(../../../images/close-icon-white.svg);
+      background-image: url(./images/close-icon-white.svg);
     }
 
     & > .footer {
@@ -70,11 +70,11 @@
     }
 
     & .high-road__btn_type_prev {
-      background-image: url(../../../images/prev-icon-white.svg);
+      background-image: url(./images/prev-icon-white.svg);
     }
 
     & .high-road__btn_type_next {
-      background-image: url(../../../images/next-icon-white.svg);
+      background-image: url(./images/next-icon-white.svg);
     }
 
     & .bikes__label {
@@ -108,11 +108,11 @@
     }
 
     & .footer__img_type_sun {
-      background-image: url(../../../images/brightness-icon-dark.svg);
+      background-image: url(./images/brightness-icon-dark.svg);
     }
 
     & .footer__img_type_night {
-      background-image: url(../../../images/night-icon-dark.svg);
+      background-image: url(./images/night-icon-dark.svg);
     }
 
     & .footer__slider {
@@ -121,7 +121,7 @@
 
     @media screen and (max-width: 740px) {
       & .footer__options {
-        background-image: url(../../../images/footer-logo-gray.svg);
+        background-image: url(./images/footer-logo-gray.svg);
       }
     }
   }

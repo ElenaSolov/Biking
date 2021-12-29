@@ -19,10 +19,10 @@
   color: #fff;
 }
 .page_theme_dark .header__img_type_sun {
-  background-image: url(../../../images/brightness-icon-dark.svg);
+  background-image: url(./images/brightness-icon-dark.svg);
 }
 .page_theme_dark .header__img_type_night {
-  background-image: url(../../../images/night-icon-dark.svg);
+  background-image: url(./images/night-icon-dark.svg);
 }
 .page_theme_dark .header__slider {
   background-color: #545454;
@@ -31,7 +31,7 @@
   background-color: #fff;
 }
 .page_theme_dark .header__burger-menu_opened {
-  background-image: url(../../../images/close-icon-white.svg);
+  background-image: url(./images/close-icon-white.svg);
 }
 .page_theme_dark > .footer {
   background-color: #333;
@@ -56,10 +56,10 @@
   background-color: #434343;
 }
 .page_theme_dark .high-road__btn_type_prev {
-  background-image: url(../../../images/prev-icon-white.svg);
+  background-image: url(./images/prev-icon-white.svg);
 }
 .page_theme_dark .high-road__btn_type_next {
-  background-image: url(../../../images/next-icon-white.svg);
+  background-image: url(./images/next-icon-white.svg);
 }
 .page_theme_dark .bikes__label {
   color: #e5e5e5;
@@ -93,16 +93,16 @@
   color: #565656;
 }
 .page_theme_dark .footer__img_type_sun {
-  background-image: url(../../../images/brightness-icon-dark.svg);
+  background-image: url(./images/brightness-icon-dark.svg);
 }
 .page_theme_dark .footer__img_type_night {
-  background-image: url(../../../images/night-icon-dark.svg);
+  background-image: url(./images/night-icon-dark.svg);
 }
 .page_theme_dark .footer__slider {
   background-color: #545454;
 }
 @media screen and (max-width: 740px) {
   .page_theme_dark .footer__options {
-    background-image: url(../../../images/footer-logo-gray.svg);
+    background-image: url(./images/footer-logo-gray.svg);
   }
 }/*# sourceMappingURL=page.css.map */

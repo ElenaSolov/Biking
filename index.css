@@ -21,10 +21,10 @@
   color: #fff;
 }
 .page_theme_dark .header__img_type_sun {
-  background-image: url(../../../images/brightness-icon-dark.svg);
+  background-image: url(./images/brightness-icon-dark.svg);
 }
 .page_theme_dark .header__img_type_night {
-  background-image: url(../../../images/night-icon-dark.svg);
+  background-image: url(./images/night-icon-dark.svg);
 }
 .page_theme_dark .header__slider {
   background-color: #545454;
@@ -33,7 +33,7 @@
   background-color: #fff;
 }
 .page_theme_dark .header__burger-menu_opened {
-  background-image: url(../../../images/close-icon-white.svg);
+  background-image: url(./images/close-icon-white.svg);
 }
 .page_theme_dark > .footer {
   background-color: #333;
@@ -58,10 +58,10 @@
   background-color: #434343;
 }
 .page_theme_dark .high-road__btn_type_prev {
-  background-image: url(../../../images/prev-icon-white.svg);
+  background-image: url(./images/prev-icon-white.svg);
 }
 .page_theme_dark .high-road__btn_type_next {
-  background-image: url(../../../images/next-icon-white.svg);
+  background-image: url(./images/next-icon-white.svg);
 }
 .page_theme_dark .bikes__label {
   color: #e5e5e5;
@@ -95,17 +95,17 @@
   color: #565656;
 }
 .page_theme_dark .footer__img_type_sun {
-  background-image: url(../../../images/brightness-icon-dark.svg);
+  background-image: url(./images/brightness-icon-dark.svg);
 }
 .page_theme_dark .footer__img_type_night {
-  background-image: url(../../../images/night-icon-dark.svg);
+  background-image: url(./images/night-icon-dark.svg);
 }
 .page_theme_dark .footer__slider {
   background-color: #545454;
 }
 @media screen and (max-width: 740px) {
   .page_theme_dark .footer__options {
-    background-image: url(../../../images/footer-logo-gray.svg);
+    background-image: url(./images/footer-logo-gray.svg);
   }
 }
 
@@ -183,7 +183,7 @@
   cursor: pointer;
 }
 .header__burger-menu_opened {
-  background-image: url(../../../images/close-icon.svg);
+  background-image: url(./images/close-icon.svg);
   background-position: center;
   right: 23px;
 }
@@ -229,7 +229,7 @@
   height: 22px;
   border: 0;
   outline: 0;
-  background-image: url(../../../images/close-icon.svg);
+  background-image: url(./images/close-icon.svg);
 }
 .header__options {
   display: grid;
@@ -244,12 +244,12 @@
 .header__img_type_sun {
   height: 28px;
   width: 28px;
-  background-image: url(../../../images/brightness-icon.svg);
+  background-image: url(./images/brightness-icon.svg);
 }
 .header__img_type_night {
   height: 19.35px;
   width: 19.35px;
-  background-image: url(../../../images/night-icon.svg);
+  background-image: url(./images/night-icon.svg);
 }
 .header__switch {
   position: relative;
@@ -674,7 +674,7 @@
   height: 40px;
   left: -1px;
   bottom: 16px;
-  background-image: url(../../../images/highway-sign.svg), url(../../../images/rectangle-green.svg);
+  background-image: url(./images/highway-sign.svg), url(./images/rectangle-green.svg);
   z-index: 2;
   background-repeat: no-repeat;
   background-position: left 16px bottom 12px, center;
@@ -686,7 +686,7 @@
   height: 40px;
   left: -1px;
   bottom: 16px;
-  background-image: url(../../../images/gravel-sign.svg), url(../../../images/rectangle-green.svg);
+  background-image: url(./images/gravel-sign.svg), url(./images/rectangle-green.svg);
   z-index: 2;
   background-repeat: no-repeat;
   background-position: left 16px bottom 12px, center;
@@ -698,7 +698,7 @@
   height: 40px;
   left: -1px;
   bottom: 16px;
-  background-image: url(../../../images/tt-sign.svg), url(../../../images/rectangle-green.svg);
+  background-image: url(./images/tt-sign.svg), url(./images/rectangle-green.svg);
   z-index: 2;
   background-repeat: no-repeat;
   background-position: left 16px bottom 12px, center;
@@ -728,10 +728,10 @@
   opacity: 0.6;
 }
 .high-road__btn_type_prev {
-  background-image: url(../../../images/prev-icon.svg);
+  background-image: url(./images/prev-icon.svg);
 }
 .high-road__btn_type_next {
-  background-image: url(../../../images/next-icon.svg);
+  background-image: url(./images/next-icon.svg);
 }
 .high-road__img {
   display: block;
@@ -1022,7 +1022,7 @@
     right: 12.5px;
     width: 10px;
     height: 4.5px;
-    background-image: url(../../../images/checked.svg);
+    background-image: url(./images/checked.svg);
     background-repeat: no-repeat;
     background-position: 0;
     background-size: contain;
@@ -1308,12 +1308,12 @@
 .footer__img_type_sun {
   height: 28px;
   width: 28px;
-  background-image: url(../../../images/brightness-icon.svg);
+  background-image: url(./images/brightness-icon.svg);
 }
 .footer__img_type_night {
   height: 19.35px;
   width: 19.35px;
-  background-image: url(../../../images/night-icon.svg);
+  background-image: url(./images/night-icon.svg);
 }
 .footer__switch {
   position: relative;
@@ -1363,7 +1363,7 @@
     display: block;
     width: 38px;
     height: 38px;
-    background-image: url(../../../images/footer-logo.svg);
+    background-image: url(./images/footer-logo.svg);
     background-position: center;
     background-repeat: no-repeat;
   }
