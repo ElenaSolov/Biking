@@ -74,6 +74,9 @@
 .page_theme_dark .training__text {
   color: #e5e5e5;
 }
+.page_theme_dark .footer {
+  background-color: #2f2f2f;
+}
 .page_theme_dark .footer__input {
   border-color: rgba(125, 125, 125, 0.5);
   color: #fff;
