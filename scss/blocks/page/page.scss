@@ -2,21 +2,21 @@
   font-family: Inter, Arial, sans-serif;
   margin: 0;
   min-width: 320px;
-  background-color: #f4f4f4;
-  color: #151515;
+  background-color: $background-main;
+  color: $font-main;
 
   &_theme_dark {
-    background-color: #333;
-    color: #fff;
+    background-color: $background-dark;
+    color: $font-dark;
 
     & > .header {
-      background-color: #333;
-      color: #fff;
+      background-color: $background-dark;
+      color: $font-dark;
     }
 
     & .header__mobile-menu {
-      background-color: #333;
-      color: #fff;
+      background-color: $background-dark;
+      color: $font-dark;
     }
 
     & .header__img_type_sun {
@@ -32,7 +32,7 @@
     }
 
     & .header__line {
-      background-color: #fff;
+      background-color: $font-dark;
     }
 
     & .header__burger-menu_opened {
@@ -40,16 +40,16 @@
     }
 
     & > .footer {
-      background-color: #333;
-      color: #fff;
+      background-color: $background-dark;
+      color: $font-dark;
     }
 
     & .intro__text {
-      color: #e5e5e5;
+      color: $font-gray-theme-dark;
     }
 
     & .intro__link {
-      color: #fff;
+      color: $font-dark;
     }
 
     & .intro__line {
@@ -57,11 +57,11 @@
     }
 
     & .merks__title {
-      color: #e5e5e5;
+      color: $font-gray-theme-dark;
     }
 
     & .high-road__text {
-      color: #e5e5e5;
+      color: $font-gray-theme-dark;
     }
 
     & .high-road__btn {
@@ -77,19 +77,19 @@
     }
 
     & .bikes__label {
-      color: #e5e5e5;
+      color: $font-gray-theme-dark;
     }
 
     & .bikes__mobile-label {
-      color: #e5e5e5;
+      color: $font-gray-theme-dark;
     }
 
     & .bikes__radio:checked + .bikes__label {
-      color: #fff;
+      color: $font-dark;
     }
 
     & .training__text {
-      color: #e5e5e5;
+      color: $font-gray-theme-dark;
     }
 
     & .footer {
@@ -98,11 +98,11 @@
 
     & .footer__input {
       border-color: rgba(125, 125, 125, 0.5);
-      color: #fff;
+      color: $font-dark;
     }
 
     & .footer__input::placeholder {
-      color: #fff;
+      color: $font-dark;
       opacity: 0.5;
     }
 
