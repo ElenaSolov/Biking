@@ -76,6 +76,10 @@
       background-image: url(./images/next-icon-white.svg);
     }
 
+    & .bikes__name {
+      color: $font-dark;
+    }
+
     & .bikes__label {
       color: $font-gray-theme-dark;
     }
@@ -122,9 +126,17 @@
       background-color: #545454;
     }
 
+    & .footer__ok {
+      color: $font-dark;
+    }
+
     @media screen and (max-width: 740px) {
       & .footer__options {
         background-image: url(./images/footer-logo-gray.svg);
+      }
+
+      & .bikes__name {
+        color: $font-main;
       }
     }
   }

@@ -62,6 +62,9 @@
 .page_theme_dark .high-road__btn_type_next {
   background-image: url(./images/next-icon-white.svg);
 }
+.page_theme_dark .bikes__name {
+  color: #fff;
+}
 .page_theme_dark .bikes__label {
   color: #e5e5e5;
 }
@@ -105,9 +108,15 @@
 .page_theme_dark .footer__slider {
   background-color: #545454;
 }
+.page_theme_dark .footer__ok {
+  color: #fff;
+}
 @media screen and (max-width: 740px) {
   .page_theme_dark .footer__options {
     background-image: url(./images/footer-logo-gray.svg);
+  }
+  .page_theme_dark .bikes__name {
+    color: #151515;
   }
 }
 
@@ -379,6 +388,7 @@
 }
 .intro__btn {
   grid-area: button;
+  font-family: Inter, Arial, sans-serif;
   background-color: #24b47e;
   width: 180px;
   height: 50px;
@@ -1294,6 +1304,8 @@
   transition: background-color 5000s ease-in-out 0s;
 }
 .footer__ok {
+  font-family: Inter, Arial, sans-serif;
+  background-color: transparent;
   position: absolute;
   right: 22px;
   top: 11px;
