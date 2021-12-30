@@ -1,5 +1,5 @@
-@import url(./vendor/normalize.css);
-@import url(./vendor/fonts.css);
+@import "./vendor/normalize.css";
+@import "./vendor/fonts.css";
 .page {
   font-family: Inter, Arial, sans-serif;
   margin: 0;
@@ -113,7 +113,12 @@
 
 .main {
   padding-top: 74px;
+}
+.main__container {
+  width: 100%;
   max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (max-width: 740px) {
   .main {
@@ -133,7 +138,12 @@
   left: 0;
   background-color: #f4f4f4;
   z-index: 2;
+}
+.header__container {
+  width: 100%;
   max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .header__nav {
   width: -webkit-fit-content;
@@ -1203,6 +1213,12 @@
   display: flex;
   flex-direction: column;
   padding: 80px 123px 60px 120px;
+}
+.footer__container {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .footer__title {
   margin: 0;

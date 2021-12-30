@@ -10,7 +10,10 @@
   left: 0;
   background-color: $background-main;
   z-index: 2;
-  max-width: 1440px;
+
+  &__container {
+    @include container;
+  }
 
   &__nav {
     width: fit-content;
