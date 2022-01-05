@@ -6,6 +6,10 @@
   flex-direction: column;
   padding: 80px 123px 60px 120px;
 
+  &__container {
+    @include container;
+  }
+
   &__title {
     margin: 0;
     padding: 0;
@@ -64,6 +68,8 @@
   }
 
   &__ok {
+    font-family: Inter, Arial, sans-serif;
+    background-color: transparent;
     position: absolute;
     right: 22px;
     top: 11px;
@@ -71,6 +77,8 @@
     font-size: 13px;
     line-height: 2.15;
     width: fit-content;
+    border: 0;
+    outline: 0;
     cursor: pointer;
   }
 
@@ -102,13 +110,13 @@
     &_type_sun {
       height: 28px;
       width: 28px;
-      background-image: url(../../../images/brightness-icon.svg);
+      background-image: url(./images/brightness-icon.svg);
     }
 
     &_type_night {
       height: 19.35px;
       width: 19.35px;
-      background-image: url(../../../images/night-icon.svg);
+      background-image: url(./images/night-icon.svg);
     }
   }
   &__switch {
@@ -136,7 +144,7 @@
     width: 100%;
     height: 100%;
     border-radius: 34px;
-    background-color: #fff;
+    background-color: $font-dark;
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
@@ -170,7 +178,7 @@
       display: block;
       width: 38px;
       height: 38px;
-      background-image: url(../../../images/footer-logo.svg);
+      background-image: url(./images/footer-logo.svg);
       background-position: center;
       background-repeat: no-repeat;
     }

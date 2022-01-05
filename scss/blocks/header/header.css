@@ -63,7 +63,7 @@
   cursor: pointer;
 }
 .header__burger-menu_opened {
-  background-image: url(../../../images/close-icon.svg);
+  background-image: url(./images/close-icon.svg);
   background-position: center;
   right: 23px;
 }
@@ -109,7 +109,7 @@
   height: 22px;
   border: 0;
   outline: 0;
-  background-image: url(../../../images/close-icon.svg);
+  background-image: url(./images/close-icon.svg);
 }
 .header__options {
   display: grid;
@@ -124,12 +124,12 @@
 .header__img_type_sun {
   height: 28px;
   width: 28px;
-  background-image: url(../../../images/brightness-icon.svg);
+  background-image: url(./images/brightness-icon.svg);
 }
 .header__img_type_night {
   height: 19.35px;
   width: 19.35px;
-  background-image: url(../../../images/night-icon.svg);
+  background-image: url(./images/night-icon.svg);
 }
 .header__switch {
   position: relative;

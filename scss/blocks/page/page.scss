@@ -1,31 +1,30 @@
 .page {
   font-family: Inter, Arial, sans-serif;
   margin: 0;
-  max-width: 1440px;
   min-width: 320px;
-  background-color: #f4f4f4;
-  color: #151515;
+  background-color: $background-main;
+  color: $font-main;
 
   &_theme_dark {
-    background-color: #333;
-    color: #fff;
+    background-color: $background-dark;
+    color: $font-dark;
 
     & > .header {
-      background-color: #333;
-      color: #fff;
+      background-color: $background-dark;
+      color: $font-dark;
     }
 
     & .header__mobile-menu {
-      background-color: #333;
-      color: #fff;
+      background-color: $background-dark;
+      color: $font-dark;
     }
 
     & .header__img_type_sun {
-      background-image: url(../../../images/brightness-icon-dark.svg);
+      background-image: url(./images/brightness-icon-dark.svg);
     }
 
     & .header__img_type_night {
-      background-image: url(../../../images/night-icon-dark.svg);
+      background-image: url(./images/night-icon-dark.svg);
     }
 
     & .header__slider {
@@ -33,24 +32,24 @@
     }
 
     & .header__line {
-      background-color: #fff;
+      background-color: $font-dark;
     }
 
     & .header__burger-menu_opened {
-      background-image: url(../../../images/close-icon-white.svg);
+      background-image: url(./images/close-icon-white.svg);
     }
 
     & > .footer {
-      background-color: #333;
-      color: #fff;
+      background-color: $background-dark;
+      color: $font-dark;
     }
 
     & .intro__text {
-      color: #e5e5e5;
+      color: $font-gray-theme-dark;
     }
 
     & .intro__link {
-      color: #fff;
+      color: $font-dark;
     }
 
     & .intro__line {
@@ -58,11 +57,11 @@
     }
 
     & .merks__title {
-      color: #e5e5e5;
+      color: $font-gray-theme-dark;
     }
 
     & .high-road__text {
-      color: #e5e5e5;
+      color: $font-gray-theme-dark;
     }
 
     & .high-road__btn {
@@ -70,36 +69,48 @@
     }
 
     & .high-road__btn_type_prev {
-      background-image: url(../../../images/prev-icon-white.svg);
+      background-image: url(./images/prev-icon-white.svg);
     }
 
     & .high-road__btn_type_next {
-      background-image: url(../../../images/next-icon-white.svg);
+      background-image: url(./images/next-icon-white.svg);
+    }
+
+    & .bikes__name {
+      color: $font-dark;
     }
 
     & .bikes__label {
-      color: #e5e5e5;
+      color: $font-gray-theme-dark;
     }
 
     & .bikes__mobile-label {
-      color: #e5e5e5;
+      color: $font-gray-theme-dark;
     }
 
     & .bikes__radio:checked + .bikes__label {
-      color: #fff;
+      color: $font-dark;
+    }
+
+    & .bikes__radio:checked + .bikes__label::after{
+      background-image: url(./images/checked-white.svg);
     }
 
     & .training__text {
-      color: #e5e5e5;
+      color: $font-gray-theme-dark;
+    }
+
+    & .footer {
+      background-color: #2f2f2f;
     }
 
     & .footer__input {
       border-color: rgba(125, 125, 125, 0.5);
-      color: #fff;
+      color: $font-dark;
     }
 
     & .footer__input::placeholder {
-      color: #fff;
+      color: $font-dark;
       opacity: 0.5;
     }
 
@@ -108,20 +119,28 @@
     }
 
     & .footer__img_type_sun {
-      background-image: url(../../../images/brightness-icon-dark.svg);
+      background-image: url(./images/brightness-icon-dark.svg);
     }
 
     & .footer__img_type_night {
-      background-image: url(../../../images/night-icon-dark.svg);
+      background-image: url(./images/night-icon-dark.svg);
     }
 
     & .footer__slider {
       background-color: #545454;
     }
 
+    & .footer__ok {
+      color: $font-dark;
+    }
+
     @media screen and (max-width: 740px) {
       & .footer__options {
-        background-image: url(../../../images/footer-logo-gray.svg);
+        background-image: url(./images/footer-logo-gray.svg);
+      }
+
+      & .bikes__name {
+        color: $font-main;
       }
     }
   }

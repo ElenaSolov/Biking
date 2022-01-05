@@ -7,7 +7,7 @@
   grid-template-areas:
     "high-road__title"
     "high-road__text"
-    "high-road__galery"
+    "high-road__gallery"
     "high-road__pagination";
 
   &__title {
@@ -26,11 +26,11 @@
     padding: 0;
   }
 
-  &__galery {
+  &__gallery {
     margin: 30px 0 0;
     padding: 0;
     list-style-type: none;
-    grid-area: high-road__galery;
+    grid-area: high-road__gallery;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -51,8 +51,7 @@
     height: 40px;
     left: -1px;
     bottom: 16px;
-    background-image: url(../../../images/highway-sign.svg), url(../../../images/rectangle-green.svg);
-    z-index: 2;
+    background-image: url(./images/highway-sign.svg), url(./images/rectangle-green.svg);
     background-repeat: no-repeat;
     background-position: left 16px bottom 12px, center;
   }
@@ -64,8 +63,7 @@
     height: 40px;
     left: -1px;
     bottom: 16px;
-    background-image: url(../../../images/gravel-sign.svg), url(../../../images/rectangle-green.svg);
-    z-index: 2;
+    background-image: url(./images/gravel-sign.svg), url(./images/rectangle-green.svg);
     background-repeat: no-repeat;
     background-position: left 16px bottom 12px, center;
   }
@@ -77,8 +75,7 @@
     height: 40px;
     left: -1px;
     bottom: 16px;
-    background-image: url(../../../images/tt-sign.svg), url(../../../images/rectangle-green.svg);
-    z-index: 2;
+    background-image: url(./images/tt-sign.svg), url(./images/rectangle-green.svg);
     background-repeat: no-repeat;
     background-position: left 16px bottom 12px, center;
   }
@@ -109,11 +106,11 @@
     }
 
     &_type_prev {
-      background-image: url(../../../images/prev-icon.svg);
+      background-image: url(./images/prev-icon.svg);
     }
 
     &_type_next {
-      background-image: url(../../../images/next-icon.svg);
+      background-image: url(./images/next-icon.svg);
     }
   }
 
@@ -141,7 +138,7 @@
       grid-template-columns: repeat(2, 1fr);
       grid-template-areas:
         "high-road__title high-road__pagination"
-        "high-road__galery high-road__galery"
+        "high-road__gallery high-road__gallery"
         "high-road__text high-road__text";
       row-gap: 40px;
     }
@@ -155,7 +152,7 @@
       border-top: 1px solid #e3e3e3;
     }
 
-    &__galery {
+    &__gallery {
       grid-template-columns: 1fr;
       max-height: 175px;
       margin: 0;
