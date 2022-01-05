@@ -92,6 +92,10 @@
       color: $font-dark;
     }
 
+    & .bikes__radio:checked + .bikes__label::after{
+      background-image: url(./images/checked-white.svg);
+    }
+
     & .training__text {
       color: $font-gray-theme-dark;
     }
