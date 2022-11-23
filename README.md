@@ -1,27 +1,27 @@
-# Проект: Велосипедная прогулка
+# Biking
 
-### Обзор
-- Интро
+### Overview
+- Intro
 - Figma
-- Используемые технологии
+- Tech stack
 
-**Интро**
+**Intro**
 
-[Biking](https://elenasolov.github.io/biking/index.html) - адаптивный сайт для любителей велосипедов.
+[Biking](https://elenasolov.github.io/biking/index.html) - adaptive web-site.
 
 **Figma**
 
-* [Ссылка на макет в Figma](https://www.figma.com/file/G3UWFlQmNtNs67751YiDH2/Month-of-Landings?node-id=2%3A7)
+* [Link to Figma layout](https://www.figma.com/file/G3UWFlQmNtNs67751YiDH2/Month-of-Landings?node-id=2%3A7)
 
-**Используемые технологии:**
+**Tech stack:**
 
 - HTML
 - CSS:
 
   * flex
   * grid
-  * медиазапросы
-  * организация файлов по методологии БЭМ
-  * Формы
+  * media queries
+  * BEM
+  * Forms
 
 - JS
